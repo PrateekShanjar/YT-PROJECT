@@ -1,143 +1,203 @@
-🎬 YouTube Sentiment Analysis System
+# 🎯 YouTube Sentiment Analysis System  
+### AI-Powered Real-Time Comment Analysis for YouTube
 
-A full-stack AI-powered web application that analyzes YouTube comments and classifies them into Positive, Negative, or Neutral sentiments using Natural Language Processing (NLP) and Machine Learning.
+Transform YouTube comments into meaningful insights using **Machine Learning** and **Natural Language Processing (NLP)**. This project fetches live comments from YouTube videos and predicts whether the audience reaction is **Positive, Negative, or Neutral** through an interactive full-stack web application.
 
-Built using Python, Flask, React, Scikit-learn, and YouTube Data API. The system fetches real-time YouTube comments, processes textual data using NLP techniques, and predicts sentiment with high accuracy.
+Built with **Python, Flask, React, Scikit-learn, and YouTube Data API**.
 
-GitHub Repository:
-YT-PROJECT Repository
+---
 
-🚀 Features
+## ✨ Key Highlights
 
-✅ Fetch real-time YouTube comments using YouTube Data API
-✅ Sentiment classification using Machine Learning
-✅ NLP preprocessing pipeline for text cleaning
-✅ Interactive React frontend dashboard
-✅ REST API integration using Flask backend
-✅ Real-time prediction results
-✅ Sentiment visualization and analysis
-✅ Responsive UI design
+🚀 Real-time YouTube comment extraction  
+🧠 AI-based sentiment prediction using NLP  
+📊 Interactive dashboard for analysis  
+⚡ Fast Flask REST API integration  
+🎨 Modern React frontend interface  
+📈 High accuracy sentiment classification model  
+🔍 Text preprocessing & TF-IDF vectorization  
+🌐 Fully responsive web application  
 
-🛠️ Tech Stack
-Frontend
-React.js
-HTML
-CSS
-JavaScript
-Backend
-Python
-Flask
-Scikit-learn
-Pandas
-NumPy
-NLP & ML
-Natural Language Processing (NLP)
-TF-IDF Vectorization
-Sentiment Classification Model
-APIs
-YouTube Data API
-📂 Project Structure
+---
+
+# 🛠️ Tech Stack
+
+### 💻 Frontend
+- React.js
+- HTML5
+- CSS3
+- JavaScript
+
+### ⚙️ Backend
+- Python
+- Flask
+- REST APIs
+
+### 🤖 Machine Learning & NLP
+- Scikit-learn
+- TF-IDF Vectorizer
+- NLP Text Processing
+- Sentiment Classification Model
+
+### 🔗 APIs
+- YouTube Data API v3
+
+---
+
+# 📂 Project Structure
+
+```bash
 YT-PROJECT/
 │
 ├── backend/
 │   ├── app.py
 │   ├── model.pkl
 │   ├── vectorizer.pkl
-│   ├── requirements.txt
+│   └── requirements.txt
 │
 ├── frontend/
 │   ├── src/
 │   ├── public/
-│   ├── package.json
+│   └── package.json
 │
 ├── dataset/
-│   ├── comments.csv
-│
-├── notebook/
-│   ├── model_training.ipynb
-│
+├── notebooks/
 └── README.md
-⚙️ Installation & Setup
-1️⃣ Clone Repository
+```
+
+---
+
+# ⚡ Getting Started
+
+## 1️⃣ Clone the Repository
+
+```bash
 git clone https://github.com/PrateekShanjar/YT-PROJECT.git
 cd YT-PROJECT
-2️⃣ Create Virtual Environment
-python -m venv venv
-Activate Environment
-Windows
-venv\Scripts\activate
-Linux/Mac
-source venv/bin/activate
-📦 Install Backend Dependencies
+```
+
+---
+
+## 2️⃣ Install Backend Dependencies
+
+```bash
 pip install -r requirements.txt
-▶️ Run Backend Server
+```
+
+---
+
+## 3️⃣ Start Backend Server
+
+```bash
 python app.py
+```
 
-Backend runs on:
+Backend will run on:
 
+```bash
 http://127.0.0.1:5000
-🌐 Run Frontend
+```
+
+---
+
+## 4️⃣ Run Frontend
+
+```bash
 cd frontend
 npm install
 npm start
+```
 
-Frontend runs on:
+Frontend will run on:
 
+```bash
 http://localhost:3000
-🔑 YouTube API Setup
-Go to Google Developer Console
-Enable YouTube Data API v3
-Generate API Key
-Add your API key in the backend configuration file
+```
 
-Example:
+---
 
+# 🔑 Configure YouTube API
+
+1. Open Google Developer Console  
+2. Enable **YouTube Data API v3**  
+3. Generate API Key  
+4. Add your API key in backend configuration
+
+```python
 API_KEY = "YOUR_API_KEY"
-🧠 Machine Learning Workflow
-NLP Preprocessing
-Lowercasing
-Stopword removal
-Tokenization
-Text cleaning
-TF-IDF feature extraction
-Model Training
-Dataset preprocessing
-Feature vectorization
-Sentiment classification
-Accuracy evaluation
-📊 Example Output
-Input Comment
-"This video is absolutely amazing!"
-Predicted Sentiment
+```
+
+---
+
+# 🧠 How It Works
+
+### 📌 Step 1 — Fetch Comments
+The application extracts comments from YouTube videos using the YouTube Data API.
+
+### 📌 Step 2 — NLP Processing
+Text data is cleaned using:
+- Tokenization
+- Stopword Removal
+- Lowercasing
+- Text Cleaning
+
+### 📌 Step 3 — Feature Extraction
+TF-IDF Vectorization converts text into numerical features.
+
+### 📌 Step 4 — Sentiment Prediction
+The trained ML model predicts:
+- Positive 😊
+- Negative 😠
+- Neutral 😐
+
+---
+
+# 📊 Model Performance
+
+| Metric | Score |
+|---|---|
+| Accuracy | 92% |
+| Precision | 91% |
+| Recall | 90% |
+| F1-Score | 91% |
+
+---
+
+# 🎥 Example
+
+### Input Comment
+```text
+"This video is incredibly helpful and well explained!"
+```
+
+### Prediction
+```text
 Positive 😊
-📈 Model Performance
-Metric	Score
-Accuracy	92%
-Precision	91%
-Recall	90%
-F1-Score	91%
-🎯 Use Cases
-YouTube Comment Analysis
-Social Media Monitoring
-Brand Reputation Analysis
-Audience Feedback Evaluation
-Content Performance Analysis
-Opinion Mining
-🔮 Future Improvements
-Multi-language sentiment analysis
-Deep Learning integration using LSTM/BERT
-Real-time analytics dashboard
-Emotion detection support
-Spam comment filtering
-Cloud deployment support
+```
 
-👨‍💻 Author
+---
 
-Developed by Prateek Shanjar & Team as an AI-powered YouTube Sentiment Analysis platform.
+# 🎯 Real-World Applications
 
+- Social Media Analytics
+- Audience Feedback Analysis
+- Brand Reputation Monitoring
+- YouTube Content Evaluation
+- Opinion Mining
+- Marketing Insights
 
+---
 
+# 🔮 Future Enhancements
 
+✅ Multi-language sentiment analysis  
+✅ Emotion detection system  
+✅ Deep Learning models (LSTM/BERT)  
+✅ Real-time analytics dashboard  
+✅ Spam & toxic comment detection  
+✅ Cloud deployment support  
+
+---
 
 <img width="1912" height="954" alt="image" src="https://github.com/user-attachments/assets/b33606aa-697f-4973-a266-cdea80bfc593" />
 
